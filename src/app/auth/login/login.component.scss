@@ -139,7 +139,8 @@ label {
   color: var(--color-primary);
   line-height: 25px;
   margin-top: 10px;
-  font-size: 16px;
+  font-size: 12px;
+  width: 230px;
 }
 
 .save-btn {
@@ -174,6 +175,7 @@ label {
   margin-right: 15px;
   display: flex;
   align-items: center;
+  cursor: pointer;
 }
 .brand-btn {
   background: #eee;
@@ -184,9 +186,11 @@ label {
   flex-direction: column;
   margin-right: 15px;
   border-radius: 4px;
+  cursor: pointer;
 }
 .link {
   color: dodgerblue;
+  text-decoration: none;
 }
 .or-link {
   text-align: center;
@@ -224,6 +228,11 @@ label {
 .meter-wrapper {
   display: flex;
 }
+.select {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
 @media screen and (max-width:600px) {
   .page-section {
     flex-direction: column;
@@ -235,10 +244,13 @@ label {
     margin-left: 100px;
     margin-top: 0;
   }
-  .left-section {
+  .left-wrapper > .para-text {
     display: none;
   }
   .right-section {
     padding: 40px;
+  }
+  .select {
+    display: none;
   }
 }
